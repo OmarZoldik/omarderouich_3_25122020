@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2? family = Roboto & display = swap");
+@import url("https://fonts.googleapis.com/css2? family = Shrikhand & display = swap");
+a {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+p {
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 1.9em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+-----------------------------header-----------------------------
+----------------------------------------------------------------*/
+header img {
+  height: 30px;
+  position: relative;
+  left: 25%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.localisation {
+  background-color: #d8d8d8bd;
+  border-top: solid 3px #8080804d;
+  height: 45px;
+  width: 100%;
+}
+.localisation .search-bar {
+  border: 0.5px #f2f2f2 solid;
+  position: relative;
+  transform: translate(-50%, -50%);
+  left: 200px;
+  top: 20px;
+}
+.localisation .search-bar .localisation-logo {
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+/*--------------------------------------------------------------
+-----------------------------presentation-----------------------
+----------------------------------------------------------------*/
+.presentation a {
+  background-color: #9356dc;
+  border-radius: 30px;
+  color: white;
+  border: 14px solid #9356dc;
+}
+
+/*--------------------------------------------------------------
+-----------------------------fonctionnemnt-------------------
+----------------------------------------------------------------*/
+.fonctionnement {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.fonctionnement h2 {
+  margin: 20px 10px 30px 20px;
+}
+
+.fonctionnement-box {
+  margin-left: 25px;
+  margin-right: 20px;
+}
+
+.foncctionnment-box-child {
+  background-color: #e0e0e063;
+  border-radius: 20px;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 20px;
+  position: relative;
+  box-shadow: 1px 1px 10px 5px rgba(187, 187, 187, 0.589);
+  padding: 25px 25px 25px 60px;
+}
+
+.fonctionnement-number {
+  border-radius: 30px;
+  background-color: #9356dc;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  position: absolute;
+  height: 23px;
+  width: 23px;
+  top: 35px;
+  left: 0px;
+  padding-top: 5px;
+  padding-left: 8px;
+  transform: translate(-50%, -50%);
+}
+
+.fonctionnement-logo {
+  position: relative;
+  right: 25px;
+  color: grey;
+}
+
+/*--------------------------------------------------------------
+-----------------------------restaurant--------------------------
+----------------------------------------------------------------*/
+.restaurants {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: -20px;
+}
+.restaurants .restaurants-box-cards {
+  margin-bottom: 30px;
+  background-color: white;
+  border-radius: 20px;
+  width: 100%;
+  height: 260px;
+  position: relative;
+  box-shadow: 1px 1px 10px 5px rgba(187, 187, 187, 0.589);
+}
+.restaurants .restaurants-box-cards img {
+  height: 180px;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  object-fit: cover;
+}
+.restaurants .restaurants-box-cards .box-card-txt {
+  line-height: 10px;
+  margin: 10px;
+}
+.restaurants .restaurants-box-cards .card-green-square {
+  background-color: #99e2d0;
+  top: 30px;
+  right: -25px;
+  color: rgba(0, 99, 0, 0.836);
+  border-radius: 2px;
+  position: absolute;
+  height: 30px;
+  width: 80px;
+  padding: 7px 10px 7px 10px;
+  transform: translate(-50%, -50%);
+}
+.restaurants .restaurants-box-cards .box-card-logo {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+/*--------------------------------------------------------------
+-----------------------------footer-----------------------------
+----------------------------------------------------------------*/
+footer {
+  background-color: rgba(0, 0, 0, 0.774);
+  color: white;
+  height: 150px;
+  width: 100%;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  line-height: 25px;
+}
+footer ul li a {
+  color: white;
+  margin-left: -10px;
+}
+footer ul li .footer-logo {
+  position: relative;
+  right: 20px;
+  font-size: 13px;
+}
