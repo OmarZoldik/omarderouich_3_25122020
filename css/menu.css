@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+.commander-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+a {
+  color: black;
+  text-decoration: none; }
+
+body {
+  margin: 0 auto; }
+
+* {
+  box-sizing: border-box; }
+
+p {
+  font-size: 1em; }
+
+h1 {
+  font-size: 1em; }
+
+h2 {
+  font-size: 1em; }
+
+h3 {
+  font-size: 1em;
+  font-weight: 100; }
+
+/*--------------------------------------------------------------
+    -----------------------------header-----------------------------
+    ----------------------------------------------------------------*/
+header .logo-return {
+  font-size: 20px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 34px;
+  left: 35px; }
+
+header img {
+  height: 30px;
+  position: relative;
+  left: 30%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  object-fit: cover; }
+
+/*--------------------------------------------------------------
+    -----------------------principal-display------------------------
+    -------------------------------------------------------------*/
+.img-presentation {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  position: absolute; }
+
+.principal-display {
+  background-color: #f2f2f2;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  position: relative;
+  top: 220px;
+  height: 1250px; }
+  .principal-display .principal-title span {
+    position: relative;
+    left: 20px;
+    top: 20px;
+    font-size: 1.6em;
+    font-family: Shrikhand; }
+  .principal-display .principal-display-icon {
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    line-height: 20px; }
+    .principal-display .principal-display-icon .fa-heart {
+      font-size: 25px; }
+    .principal-display .principal-display-icon:hover {
+      background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+      background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+      background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent; }
+      .principal-display .principal-display-icon:hover .fa-heart {
+        font-weight: bold; }
+
+/*--------------------------------------------------------------
+    -----------------------------menu-------------------------------
+    -------------------------------------------------------------*/
+.menu {
+  margin: 60px 15px 40px 15px; }
+
+.menu-box h1 {
+  border-bottom: solid 3px #99e2d0;
+  width: 42px;
+  padding-bottom: 5px; }
+
+.menu-box-element {
+  background-color: white;
+  border-radius: 15px;
+  width: 100%;
+  height: 75px;
+  animation: scale-top 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  box-shadow: 1px 1px 10px 5px rgba(187, 187, 187, 0.589);
+  margin-bottom: 20px;
+  position: relative;
+  transition-property: transform;
+  transition-duration: 300ms;
+  overflow: hidden; }
+  .menu-box-element:nth-child(3n + 1) {
+    animation-delay: 0s; }
+  .menu-box-element:nth-child(3n + 2) {
+    animation-delay: 0.3s; }
+  .menu-box-element:nth-child(3n) {
+    animation-delay: 0.6s; }
+  .menu-box-element a {
+    display: flex;
+    justify-content: space-between; }
+  .menu-box-element:hover {
+    transform: scale(1.05); }
+    .menu-box-element:hover .animation-square {
+      height: 75px;
+      width: 65px;
+      background-color: #99e2d0;
+      position: absolute;
+      z-index: 1;
+      bottom: 0px;
+      right: 0px;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      animation: scale-right 0.4s; }
+      .menu-box-element:hover .animation-square .fa-check-circle {
+        color: #ffffff;
+        font-size: 25px;
+        position: relative;
+        top: 24px;
+        left: 20px;
+        animation: rotate-center 0.6s ease-in-out both; }
+  .menu-box-element .menu-box-element-txt {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    right: -15px;
+    line-height: 16px; }
+  .menu-box-element .menu-box-element-price {
+    position: absolute;
+    top: 28px;
+    right: 18px;
+    font-weight: bold; }
+
+.commander-btn {
+  margin: 80px 0px 80px 0px; }
+  .commander-btn a {
+    border-radius: 30px;
+    padding: 15px 40px 15px 40px;
+    background: linear-gradient(to top, #9356dc, #ff79da);
+    color: #ffffff; }
+
+/*--------------------------------------------------------------
+    -----------------------------footer-----------------------------
+    ----------------------------------------------------------------*/
+footer {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.774);
+  width: 100%;
+  position: relative;
+  top: 210px;
+  height: 190px; }
+  footer P {
+    padding: 30px 20px 10px 20px;
+    font-family: Shrikhand;
+    font-size: 16px; }
+  footer ul {
+    list-style: none; }
+  footer li {
+    line-height: 25px; }
+  footer .footer-link {
+    color: #ffffff;
+    margin-left: -10px; }
+    footer .footer-link .footer-link1 {
+      margin-left: -20px; }
+  footer .footer-logo {
+    position: relative;
+    right: 20px;
+    font-size: 13px; }
+
+/*--------------------------------------------------------------
+  --------------------------keyframes--------------------------
+  ----------------------------------------------------------------*/
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes scale-right {
+  0% {
+    transform: scaleX(0);
+    transform-origin: right; }
+  100% {
+    transform: scaleX(1);
+    transform-origin: right; } }
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(-100px); } }
+
+@keyframes scale-top {
+  0% {
+    transform: translateY(15px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+/*---------------------------------------------------
+----------------------deckstop-----------------------
+-------------------------------------------------*/
+@media screen and (min-width: 1024px) {
+  .principal-display {
+    height: 600px; }
+  header img {
+    left: 42%; }
+  .menu {
+    display: flex;
+    justify-content: space-around; }
+  footer {
+    display: flex;
+    height: 100px; }
+    footer ul {
+      display: flex; }
+      footer ul .footer-link {
+        margin-right: 100px; } }
