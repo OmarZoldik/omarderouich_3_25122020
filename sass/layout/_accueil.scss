@@ -56,16 +56,16 @@ header {
     border: 0.5px #e2e2e2 solid;
     position: relative;
     transform: translate(-50%, -50%);
-    left: 200px;
+    left: 55%;
     top: 20px;
     background-color: #e2e2e2;
+  }
 
-    .fa-map-marker-alt {
-      transform: translate(-50%, -50%);
-      position: absolute;
-      top: 75px;
-      left: 90px;
-    }
+  .fa-map-marker-alt {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 85px;
+    left: 33%;
   }
 }
 
@@ -78,15 +78,30 @@ header {
   background: $grey;
   height: 300px;
 
-  a {
+  h1 {
+    padding-right: 50px;
+    padding-left: 50px;
+    font-weight: 900;
+  }
+
+  p {
+    padding-right: 50px;
+    padding-left: 50px;
+    color: grey;
+  }
+
+  .restaurant-btn {
     border-radius: 30px;
     padding: 15px 20px 15px 20px;
     background: linear-gradient(to top, $purple, $rose);
     color: $white;
+    height: 50px;
+    width: 215px;
+    margin: 30px 100px 30px 100px;
+  }
 
-    P {
-      color: grey;
-    }
+  a {
+    color: $white;
   }
 }
 
@@ -254,27 +269,43 @@ footer {
 }
 
 /*--------------------------------------------------------------
-  ----------------------Responsive-tablette-----------------------
-  -------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
   ---------------------Responsive-Deckstop----------------------
   -------------------------------------------------------------*/
 
-@keyframes menu-chargement {
-  0% {
-    transform: scaleX(0);
+@media screen and (min-width: 1024px) {
+  header {
+    img {
+      left: 42%;
+    }
   }
-  25% {
-    transform: scaleX(0.18);
+
+  .fonctionnement-box {
+    display: flex;
+    justify-content: space-between;
   }
-  50% {
-    transform: scaleX(0.4);
+  .foncctionnment-box-child {
+    width: 27%;
   }
-  75% {
-    transform: scaleX(0.81);
+
+  .restaurants-box {
+    display: flex;
+    justify-content: space-between;
   }
-  100% {
-    transform: scaleX(1);
+  .restaurants-box-cards {
+    width: 21%;
+  }
+
+  footer {
+    display: flex;
+    height: 100px;
+    ul {
+      display: flex;
+      li {
+        margin: 30px 60px 30px 60px;
+      }
+      .footer-link {
+        margin-right: 100px;
+      }
+    }
   }
 }
