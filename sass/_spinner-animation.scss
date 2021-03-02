@@ -5,22 +5,43 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   margin-top: -30px;
   margin-left: -30px;
   border-radius: 50%;
-  border: 5px solid lightgray;
+  border: 6px solid lightgray;
   border-top-color: $rose;
   border-bottom-color: $purple;
-  animation: spinner 5s linear infinite;
+  animation: spinner 4s linear both;
+  z-index: 999999;
+  animation-duration: 0.5s;
+}
+
+.body {
+  animation: body 0s both;
+  animation-delay: 0.5s;
+  animation-duration: 0.5s;
+}
+
+@keyframes body {
+  0% {
+    transform: translate(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(1);
+    opacity: 1;
+  }
 }
 
 @keyframes spinner {
   0% {
     transform: rotate(0deg);
+    opacity: 1;
   }
   100% {
     transform: rotate(360deg);
+    opacity: 0;
   }
 }

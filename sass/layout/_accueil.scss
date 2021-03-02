@@ -36,10 +36,11 @@ h3 {
   ----------------------------------------------------------------*/
 
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   img {
     height: 30px;
-    position: relative;
-    left: 30%;
     margin-top: 15px;
     margin-bottom: 15px;
     object-fit: cover;
@@ -51,21 +52,17 @@ header {
   border-top: solid 3px #8080804d;
   height: 45px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .search-bar {
     border: 0.5px #e2e2e2 solid;
-    position: relative;
-    transform: translate(-50%, -50%);
-    left: 55%;
-    top: 20px;
     background-color: #e2e2e2;
   }
 
   .fa-map-marker-alt {
-    transform: translate(-50%, -50%);
-    position: absolute;
-    top: 85px;
-    left: 33%;
+    margin: 20px;
   }
 }
 
@@ -74,19 +71,18 @@ header {
   ----------------------------------------------------------------*/
 
 .presentation {
-  padding: 10px 10px 10px 10px;
+  padding: 25px 25px 19px 25px;
   background: $grey;
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 
   h1 {
-    padding-right: 50px;
-    padding-left: 50px;
     font-weight: 900;
   }
 
   p {
-    padding-right: 50px;
-    padding-left: 50px;
     color: grey;
   }
 
@@ -132,13 +128,6 @@ header {
   position: relative;
   box-shadow: 1px 1px 10px 5px rgba(187, 187, 187, 0.589);
   padding: 25px 25px 25px 60px;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 300ms;
-  cursor: pointer;
-  &:hover {
-    transform: scale(1.07);
-  }
 }
 
 .fonctionnement-number {
@@ -182,13 +171,6 @@ header {
     height: 260px;
     position: relative;
     box-shadow: 1px 1px 10px 5px rgba(187, 187, 187, 0.589);
-    transform: scale(1);
-    transition-property: transform;
-    transition-duration: 300ms;
-    cursor: pointer;
-    &:hover {
-      transform: scale(1.06);
-    }
 
     img {
       height: 180px;
@@ -216,18 +198,26 @@ header {
       transform: translate(-50%, -50%);
     }
 
-    .fa-heart {
+    .box-card-logo {
       position: absolute;
-      bottom: 28px;
-      right: 25px;
-      font-size: 20px;
-      transition-property: transform;
-      transition-duration: 300ms;
+      bottom: 20px;
+      right: 20px;
+      color: black;
       cursor: pointer;
+      background-size: auto 0%;
+      transition: all 400ms linear 0s;
+      font-size: 20px;
+
       &:hover {
-        transform: scale(1.2);
-        color: linear-gradient(to top, $purple, $rose);
-        font-weight: bold;
+        background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        .fa-heart {
+          font-weight: bold;
+          line-height: 15px;
+        }
       }
     }
   }
@@ -292,7 +282,7 @@ footer {
     justify-content: space-between;
   }
   .restaurants-box-cards {
-    width: 21%;
+    width: 23%;
   }
 
   footer {

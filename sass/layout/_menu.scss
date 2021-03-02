@@ -33,17 +33,16 @@ h3 {
     ----------------------------------------------------------------*/
 
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .logo-return {
     font-size: 20px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 34px;
-    left: 35px;
+    position: relative;
+    left: -245px;
   }
   img {
     height: 30px;
-    position: relative;
-    left: 30%;
     margin-top: 15px;
     margin-bottom: 15px;
     object-fit: cover;
@@ -79,18 +78,18 @@ header {
 
   .principal-display-icon {
     margin-right: 20px;
-    .fa-heart {
-      font-size: 25px;
-    }
-    &:hover {
-      background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
-      background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
-      background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
-      -webkit-background-clip: text;
-      -moz-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
+    color: black;
+    cursor: pointer;
+    background-size: auto 0%;
+    transition: all 400ms linear 0s;
+    font-size: 25px;
 
+    &:hover {
+      background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6);
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       .fa-heart {
         font-weight: bold;
       }
@@ -131,14 +130,11 @@ header {
   }
   box-shadow: 1px 1px 10px 5px rgba(187, 187, 187, 0.589);
   margin-bottom: 20px;
-  position: relative;
   overflow: hidden;
   text-overflow: ellipsis;
 
   a {
     display: flex;
-    justify-content: space-between;
-    text-overflow: ellipsis;
   }
 
   .animation-square {
@@ -172,15 +168,22 @@ header {
         animation: rotate-center 0.6s ease-in-out both;
       }
     }
+    .menu-box-element-txt {
+      animation: slide-right 0.8s both;
+    }
   }
 
   .menu-box-element-txt {
-    flex: 1;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
     line-height: 16px;
-    margin-left: 15px;
+    padding-left: 15px;
+    width: calc(100% - 45px);
+
+    h3,
+    p {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
   }
 
   .menu-box-element-price {
@@ -189,14 +192,6 @@ header {
     justify-content: center;
     align-items: center;
     font-weight: bold;
-  }
-
-  &:hover {
-    transform: scale(1.05);
-
-    .menu-box-element-price {
-      animation: slide-right 0.8s both;
-    }
   }
 }
 
@@ -272,6 +267,7 @@ footer {
   0% {
     transform: translateX(100px);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -279,10 +275,20 @@ footer {
 
 @keyframes slide-right {
   0% {
-    width: 35px;
+    width: calc(100% - 45px);
   }
   100% {
-    width: 200px;
+    width: calc(100% - 110px);
+  }
+}
+
+@keyframes scale-top-full {
+  0% {
+    transform: scaleY(0);
+  }
+
+  100% {
+    transform: scaleY(1);
   }
 }
 
@@ -306,30 +312,30 @@ footer {
     height: 600px;
   }
 
-  header {
-    img {
-      left: 42%;
-    }
-  }
-
   .menu {
     display: flex;
     justify-content: space-around;
   }
-  .menu-box-element {
+  .commander-btn {
+    margin: 25px 0px 0px 0px;
   }
 
   footer {
-    display: flex;
-    height: 100px;
+    height: 155px;
     ul {
+      margin: 15px 20px 20px 160px;
       li {
-        margin: 30px 0px 30px 10px;
+        margin: 34px 30px 20px 50px;
       }
       display: flex;
       .footer-link {
         margin-right: 100px;
       }
+    }
+    .footer-title {
+      position: relative;
+      left: 50px;
+      top: 75px;
     }
   }
 }
