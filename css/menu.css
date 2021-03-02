@@ -21,7 +21,7 @@ p {
 
 h1 {
   font-size: 1.6em;
-  font-family: Shrikhand; }
+  font-family: Shrikhand, serif; }
 
 h2 {
   font-size: 1em; }
@@ -177,7 +177,7 @@ footer {
     position: relative;
     left: 35px;
     top: 25px;
-    font-family: Shrikhand;
+    font-family: Shrikhand, serif;
     font-size: 16px; }
   footer ul {
     list-style: none;
@@ -263,7 +263,7 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: Roboto; }
+  font-family: Roboto,serif; }
 
 p {
   font-size: 1em; }
@@ -447,7 +447,7 @@ footer {
   height: 200px; }
   footer P {
     padding: 30px 20px 10px 20px;
-    font-family: Shrikhand;
+    font-family: Shrikhand,serif;
     font-size: 16px; }
   footer ul {
     list-style: none; }

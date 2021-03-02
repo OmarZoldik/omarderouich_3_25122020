@@ -170,9 +170,9 @@ footer {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.774);
   width: 100%;
-  position: relative;
   top: 210px;
-  height: 190px; }
+  height: 190px;
+  position: relative; }
   footer .footer-title {
     position: relative;
     left: 35px;
@@ -263,7 +263,7 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: Roboto; }
+  font-family: Roboto,serif; }
 
 p {
   font-size: 1em; }
@@ -447,7 +447,7 @@ footer {
   height: 200px; }
   footer P {
     padding: 30px 20px 10px 20px;
-    font-family: Shrikhand;
+    font-family: Shrikhand,serif;
     font-size: 16px; }
   footer ul {
     list-style: none; }
