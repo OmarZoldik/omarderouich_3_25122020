@@ -1,5 +1,259 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+.commander-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+a {
+  color: black;
+  text-decoration: none; }
+
+body {
+  margin: 0 auto; }
+
+* {
+  box-sizing: border-box; }
+
+p {
+  font-size: 1em;
+  font-weight: 100; }
+
+h1 {
+  font-size: 1.6em;
+  font-family: Shrikhand; }
+
+h2 {
+  font-size: 1em; }
+
+h3 {
+  font-size: 1em; }
+
+/*--------------------------------------------------------------
+    -----------------------------header-----------------------------
+    ----------------------------------------------------------------*/
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  header .logo-return {
+    font-size: 20px;
+    position: relative;
+    left: -245px; }
+  header img {
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    object-fit: cover; }
+
+/*--------------------------------------------------------------
+    -----------------------principal-display------------------------
+    -------------------------------------------------------------*/
+.img-presentation {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  position: absolute; }
+
+.principal-display {
+  background-color: #f2f2f2;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  position: relative;
+  top: 220px;
+  height: 1250px; }
+  .principal-display .principal-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .principal-display .principal-title h1 {
+      margin-left: 20px; }
+  .principal-display .principal-display-icon {
+    margin-right: 20px;
+    color: black;
+    cursor: pointer;
+    background-size: auto 0%;
+    transition: all 400ms linear 0s;
+    font-size: 25px; }
+    .principal-display .principal-display-icon:hover {
+      background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6);
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+      .principal-display .principal-display-icon:hover .fa-heart {
+        font-weight: bold; }
+
+/*--------------------------------------------------------------
+    -----------------------------menu-------------------------------
+    -------------------------------------------------------------*/
+.menu {
+  margin: 60px 15px 40px 15px; }
+
+.menu-box h1 {
+  border-bottom: solid 3px #99e2d0;
+  width: 42px;
+  padding-bottom: 5px; }
+
+.menu-box-element {
+  background-color: white;
+  border-radius: 15px;
+  width: 100%;
+  height: 75px;
+  animation: scale-top 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  box-shadow: 1px 1px 10px 5px rgba(187, 187, 187, 0.589);
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+  .menu-box-element:nth-child(3n + 1) {
+    animation-delay: 0s; }
+  .menu-box-element:nth-child(3n + 2) {
+    animation-delay: 0.3s; }
+  .menu-box-element:nth-child(3n) {
+    animation-delay: 0.6s; }
+  .menu-box-element a {
+    display: flex; }
+  .menu-box-element .animation-square {
+    position: absolute;
+    height: 75px;
+    width: 65px;
+    background-color: #99e2d0;
+    z-index: 1;
+    bottom: 0px;
+    right: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transform: scaleX(0);
+    transform-origin: right; }
+    .menu-box-element .animation-square .fa-check-circle {
+      color: #ffffff;
+      font-size: 25px;
+      position: relative;
+      top: 24px;
+      left: 20px; }
+  .menu-box-element:hover {
+    transform: scale(1.05); }
+    .menu-box-element:hover .animation-square {
+      animation: scale-right 0.8s both; }
+      .menu-box-element:hover .animation-square .fa-check-circle {
+        animation: rotate-center 0.6s ease-in-out both; }
+    .menu-box-element:hover .menu-box-element-txt {
+      animation: slide-right 0.8s both; }
+  .menu-box-element .menu-box-element-txt {
+    line-height: 16px;
+    padding-left: 15px;
+    width: calc(100% - 45px); }
+    .menu-box-element .menu-box-element-txt h3,
+    .menu-box-element .menu-box-element-txt p {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; }
+  .menu-box-element .menu-box-element-price {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold; }
+
+.commander-btn {
+  margin: 55px 0px 80px 0px; }
+  .commander-btn a {
+    border-radius: 30px;
+    padding: 15px 40px 15px 40px;
+    background: linear-gradient(to top, #9356dc, #ff79da);
+    color: #ffffff; }
+
+/*--------------------------------------------------------------
+    -----------------------------footer-----------------------------
+    ----------------------------------------------------------------*/
+footer {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.774);
+  width: 100%;
+  position: relative;
+  top: 210px;
+  height: 190px; }
+  footer .footer-title {
+    position: relative;
+    left: 35px;
+    top: 25px;
+    font-family: Shrikhand;
+    font-size: 16px; }
+  footer ul {
+    list-style: none;
+    margin-bottom: 0px;
+    margin-top: 40px; }
+  footer li {
+    line-height: 25px; }
+  footer .footer-link {
+    color: #ffffff; }
+  footer .footer-link-2 {
+    color: #ffffff; }
+  footer .footer-logo {
+    position: relative;
+    right: 5px;
+    font-size: 13px; }
+
+/*--------------------------------------------------------------
+  -------------------------keyframes--------------------------
+  ----------------------------------------------------------------*/
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes scale-right {
+  0% {
+    transform: translateX(100px); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes slide-right {
+  0% {
+    width: calc(100% - 45px); }
+  100% {
+    width: calc(100% - 110px); } }
+
+@keyframes scale-top-full {
+  0% {
+    transform: scaleY(0); }
+  100% {
+    transform: scaleY(1); } }
+
+@keyframes scale-top {
+  0% {
+    transform: translateY(15px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+/*---------------------------------------------------
+--------------Responsive deckstop-------------------
+-------------------------------------------------*/
+@media screen and (min-width: 1024px) {
+  .principal-display {
+    height: 600px; }
+  .menu {
+    display: flex;
+    justify-content: space-around; }
+  .commander-btn {
+    margin: 25px 0px 0px 0px; }
+  footer {
+    height: 155px; }
+    footer ul {
+      margin: 15px 20px 20px 160px;
+      display: flex; }
+      footer ul li {
+        margin: 34px 30px 20px 50px; }
+      footer ul .footer-link {
+        margin-right: 100px; }
+    footer .footer-title {
+      position: relative;
+      left: 50px;
+      top: 75px; } }
+
 a {
   color: black;
   text-decoration: none; }
@@ -16,10 +270,6 @@ p {
 
 h1 {
   font-size: 1.9em;
-  font-weight: bold; }
-
-h2 {
-  font-size: 1.7em;
   font-weight: bold; }
 
 h3 {
@@ -74,7 +324,8 @@ header {
     color: #ffffff;
     height: 50px;
     width: 215px;
-    margin: 30px 100px 30px 100px; }
+    margin: 30px 100px 30px 100px;
+    box-shadow: 1px 1px 10px 5px rgba(187, 187, 187, 0.589); }
   .presentation a {
     color: #ffffff; }
 
@@ -99,7 +350,13 @@ header {
   margin-bottom: 20px;
   position: relative;
   box-shadow: 1px 1px 10px 5px rgba(187, 187, 187, 0.589);
-  padding: 25px 25px 25px 60px; }
+  padding: 25px 25px 25px 60px;
+  transition: transform 450ms; }
+  .foncctionnment-box-child:hover {
+    transform: scale(1.13);
+    background-color: #9356dc;
+    opacity: 0.01;
+    color: black; }
 
 .fonctionnement-number {
   border-radius: 30px;
@@ -130,6 +387,9 @@ header {
   background-color: #f2f2f2;
   padding: 20px;
   margin-bottom: -20px; }
+  .restaurants h2 {
+    font-size: 1.7em;
+    font-weight: bold; }
   .restaurants .restaurants-box-cards {
     margin-bottom: 30px;
     background-color: white;
@@ -174,8 +434,7 @@ header {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; }
         .restaurants .restaurants-box-cards .box-card-logo:hover .fa-heart {
-          font-weight: bold;
-          line-height: 15px; }
+          font-weight: bold; }
 
 /*--------------------------------------------------------------
   -----------------------------footer-----------------------------

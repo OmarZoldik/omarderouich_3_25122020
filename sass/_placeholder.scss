@@ -1,18 +1,16 @@
 %flex-between {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  %flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  %flex-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  
+  display: flex;
+  justify-content: space-between;
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

@@ -21,11 +21,6 @@ h1 {
   font-weight: bold;
 }
 
-h2 {
-  font-size: 1.7em;
-  font-weight: bold;
-}
-
 h3 {
   font-size: 1.1em;
   font-weight: bold;
@@ -94,6 +89,7 @@ header {
     height: 50px;
     width: 215px;
     margin: 30px 100px 30px 100px;
+    box-shadow: 1px 1px 10px 5px rgba(187, 187, 187, 0.589);
   }
 
   a {
@@ -128,6 +124,13 @@ header {
   position: relative;
   box-shadow: 1px 1px 10px 5px rgba(187, 187, 187, 0.589);
   padding: 25px 25px 25px 60px;
+  transition: transform 450ms;
+  &:hover {
+    transform: scale(1.13);
+    background-color: $purple;
+    opacity: 0.01;
+    color: black;
+  }
 }
 
 .fonctionnement-number {
@@ -162,6 +165,11 @@ header {
   background-color: $grey;
   padding: 20px;
   margin-bottom: -20px;
+
+  h2 {
+    font-size: 1.7em;
+    font-weight: bold;
+  }
 
   .restaurants-box-cards {
     margin-bottom: 30px;
@@ -216,7 +224,6 @@ header {
         -webkit-text-fill-color: transparent;
         .fa-heart {
           font-weight: bold;
-          line-height: 15px;
         }
       }
     }
