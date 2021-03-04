@@ -27,29 +27,15 @@ h3 {
 }
 
 /*--------------------------------------------------------------
-  -----------------------------header-----------------------------
+  -----------------------------locaisation-----------------------------
   ----------------------------------------------------------------*/
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  img {
-    height: 30px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    object-fit: cover;
-  }
-}
 
 .localisation {
   background-color: #d8d8d8bd;
   border-top: solid 3px #8080804d;
   height: 45px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-center;
 
   .search-bar {
     border: 0.5px #e2e2e2 solid;
@@ -57,7 +43,7 @@ header {
   }
 
   .fa-map-marker-alt {
-    margin: 20px;
+    margin: 10px;
   }
 }
 
@@ -68,10 +54,7 @@ header {
 .presentation {
   padding: 25px 25px 19px 25px;
   background: $grey;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  @extend %flex-column;
 
   h1 {
     font-weight: 900;
@@ -226,40 +209,6 @@ header {
         }
       }
     }
-  }
-}
-/*--------------------------------------------------------------
-  -----------------------------footer-----------------------------
-  ----------------------------------------------------------------*/
-footer {
-  color: $white;
-  background-color: rgba(0, 0, 0, 0.774);
-  height: 200px;
-  width: 100%;
-
-  P {
-    padding: 30px 20px 10px 20px;
-    font-family: Shrikhand, serif;
-    font-size: 16px;
-  }
-
-  ul {
-    list-style: none;
-  }
-
-  li {
-    line-height: 25px;
-  }
-
-  a {
-    color: $white;
-    margin-left: -10px;
-  }
-
-  .footer-logo {
-    position: relative;
-    right: 20px;
-    font-size: 13px;
   }
 }
 

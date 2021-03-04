@@ -1,0 +1,38 @@
+footer {
+  color: $white;
+  background-color: rgba(0, 0, 0, 0.774);
+  height: 200px;
+  width: 100%;
+
+  .footer-title {
+    position: relative;
+    left: 44px;
+    top: 39px;
+    font-family: Shrikhand, serif;
+    font-size: 16px;
+  }
+
+  ul {
+    list-style: none;
+    margin-bottom: 0px;
+    margin-top: 52px;
+  }
+
+  li {
+    line-height: 25px;
+  }
+
+  .footer-logo {
+    position: relative;
+    right: -3px;
+    font-size: 13px;
+  }
+
+  .footer-link {
+    color: $white;
+    padding-left: 10px;
+  }
+  .footer-link-2 {
+    color: $white;
+  }
+}

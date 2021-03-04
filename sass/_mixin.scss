@@ -1,1 +1,18 @@
+.heart-icon {
+    margin-right: 20px;
+    color: black;
+    cursor: pointer;
+    background-size: auto 0%;
+    transition: all 400ms linear 0s;
+    font-size: 25px;
 
+    &:hover {
+      background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6) no-repeat;
+      background-size: auto 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      .fa-heart {
+        font-weight: bold;
+      }
+    }
+  }
