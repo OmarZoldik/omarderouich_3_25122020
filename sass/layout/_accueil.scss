@@ -12,20 +12,6 @@ body {
   font-family: Roboto, serif;
 }
 
-p {
-  font-size: 1em;
-}
-
-h1 {
-  font-size: 1.9em;
-  font-weight: bold;
-}
-
-h3 {
-  font-size: 1.1em;
-  font-weight: bold;
-}
-
 /*--------------------------------------------------------------
   -----------------------------locaisation-----------------------------
   ----------------------------------------------------------------*/
@@ -57,7 +43,8 @@ h3 {
   @extend %flex-column;
 
   h1 {
-    font-weight: 900;
+    font-size: 1.9em;
+    font-weight: bold;
   }
 
   p {
@@ -107,19 +94,12 @@ h3 {
   position: relative;
   box-shadow: 1px 1px 10px 5px rgba(187, 187, 187, 0.589);
   padding: 25px 25px 25px 60px;
-  transition: transform 450ms;
-  &:hover {
-    transform: scale(1.13);
-    background-color: $purple;
-    opacity: 0.01;
-    color: black;
-  }
 }
 
 .fonctionnement-number {
   border-radius: 30px;
   background-color: $purple;
-  color:$white;
+  color: $white;
   font-size: 10px;
   font-weight: bold;
   position: absolute;
@@ -162,6 +142,15 @@ h3 {
     height: 260px;
     position: relative;
     box-shadow: 1px 1px 10px 5px rgba(187, 187, 187, 0.589);
+
+    p {
+      font-size: 1em;
+    }
+
+    h3 {
+      font-size: 1.1em;
+      font-weight: bold;
+    }
 
     img {
       height: 180px;
@@ -238,5 +227,4 @@ h3 {
   .restaurants-box-cards {
     width: 23%;
   }
-
 }

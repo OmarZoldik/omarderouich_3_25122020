@@ -24,7 +24,8 @@ body {
   margin: 0 auto; }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: Roboto, serif; }
 
 /*--------------------------------------------------------------
     -----------------------principal-display------------------------
@@ -40,7 +41,8 @@ body {
   border-top-right-radius: 40px;
   position: relative;
   z-index: 99;
-  margin-top: -40px; }
+  margin-top: -40px;
+  height: 1400px; }
   .principal-display-menu .principal-title h1 {
     margin-left: 20px;
     font-size: 1.6em;
@@ -125,7 +127,8 @@ body {
     font-weight: bold; }
 
 .commander-btn {
-  margin: 55px 0px 80px 0px; }
+  position: relative;
+  top: 80px; }
   .commander-btn a {
     border-radius: 30px;
     padding: 15px 40px 15px 40px;
@@ -136,13 +139,11 @@ body {
 --------------Responsive deckstop-------------------
 -------------------------------------------------*/
 @media screen and (min-width: 1024px) {
-  .principal-display {
-    height: 600px; }
+  .principal-display-menu {
+    height: 800px; }
   .menu {
     display: flex;
-    justify-content: space-around; }
-  .commander-btn {
-    margin: 25px 0px 0px 0px; } }
+    justify-content: space-around; } }
 
 a {
   color: black;
@@ -154,17 +155,6 @@ body {
 * {
   box-sizing: border-box;
   font-family: Roboto, serif; }
-
-p {
-  font-size: 1em; }
-
-h1 {
-  font-size: 1.9em;
-  font-weight: bold; }
-
-h3 {
-  font-size: 1.1em;
-  font-weight: bold; }
 
 /*--------------------------------------------------------------
   -----------------------------locaisation-----------------------------
@@ -187,7 +177,8 @@ h3 {
   padding: 25px 25px 19px 25px;
   background: #f2f2f2; }
   .presentation h1 {
-    font-weight: 900; }
+    font-size: 1.9em;
+    font-weight: bold; }
   .presentation p {
     color: grey; }
   .presentation .restaurant-btn {
@@ -223,13 +214,7 @@ h3 {
   margin-bottom: 20px;
   position: relative;
   box-shadow: 1px 1px 10px 5px rgba(187, 187, 187, 0.589);
-  padding: 25px 25px 25px 60px;
-  transition: transform 450ms; }
-  .foncctionnment-box-child:hover {
-    transform: scale(1.13);
-    background-color: #9356dc;
-    opacity: 0.01;
-    color: black; }
+  padding: 25px 25px 25px 60px; }
 
 .fonctionnement-number {
   border-radius: 30px;
@@ -271,6 +256,11 @@ h3 {
     height: 260px;
     position: relative;
     box-shadow: 1px 1px 10px 5px rgba(187, 187, 187, 0.589); }
+    .restaurants .restaurants-box-cards p {
+      font-size: 1em; }
+    .restaurants .restaurants-box-cards h3 {
+      font-size: 1.1em;
+      font-weight: bold; }
     .restaurants .restaurants-box-cards img {
       height: 180px;
       width: 100%;
