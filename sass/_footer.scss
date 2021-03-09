@@ -36,3 +36,28 @@ footer {
     color: $white;
   }
 }
+
+/*----------------------------------------------------------
+-----------------------reponsive--------------------------
+-----------------------------------------------------------*/
+
+@media screen and (min-width: 1024px) {
+  footer {
+    height: 150px;
+    ul {
+      margin: 15px 20px 20px 160px;
+      li {
+        margin: 34px 30px 20px 50px;
+      }
+      display: flex;
+      .footer-link {
+        margin-right: 100px;
+      }
+    }
+    .footer-title {
+      position: relative;
+      left: 50px;
+      top: 75px;
+    }
+  }
+}

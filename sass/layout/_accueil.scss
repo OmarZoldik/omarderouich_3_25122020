@@ -67,12 +67,12 @@ h3 {
   .restaurant-btn {
     border-radius: 30px;
     padding: 15px 20px 15px 20px;
-    background: linear-gradient(to top, $purple, $rose);
+    background: $degrade;
     color: $white;
     height: 50px;
     width: 215px;
     margin: 30px 100px 30px 100px;
-    box-shadow: 1px 1px 10px 5px rgba(187, 187, 187, 0.589);
+    box-shadow: $shadow;
   }
 
   a {
@@ -119,7 +119,7 @@ h3 {
 .fonctionnement-number {
   border-radius: 30px;
   background-color: $purple;
-  color: white;
+  color:$white;
   font-size: 10px;
   font-weight: bold;
   position: absolute;
@@ -239,17 +239,4 @@ h3 {
     width: 23%;
   }
 
-  footer {
-    display: flex;
-    height: 100px;
-    ul {
-      display: flex;
-      li {
-        margin: 30px 60px 30px 60px;
-      }
-      .footer-link {
-        margin-right: 100px;
-      }
-    }
-  }
 }
