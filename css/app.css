@@ -312,7 +312,7 @@ body {
   .restaurants-box {
     display: flex;
     justify-content: space-between; }
-  .restaurants-box-cards {
+  .restaurants .restaurants-box-cards {
     width: 23%; } }
 
 .heart-icon {
