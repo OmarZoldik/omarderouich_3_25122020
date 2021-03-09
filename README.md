@@ -1,5 +1,3 @@
-omarderouich_3_25122020
-
 Projet 3 OPENCLASSROOMS ohmyfood
 
 Compétences évaluées:
