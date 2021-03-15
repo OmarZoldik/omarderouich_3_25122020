@@ -34,8 +34,6 @@
   -------------------------menu-box animation--------------------------
   ----------------------------------------------------------------*/
 
-
-
 @keyframes scale-top {
   0% {
     transform: translateY(30px);
@@ -52,11 +50,11 @@
   ----------------------------------------------------------------*/
 
 @keyframes body {
-  0% {
+  from {
     transform: translate(0);
     opacity: 0;
   }
-  100% {
+  to {
     transform: translate(1);
     opacity: 1;
   }

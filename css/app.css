@@ -467,10 +467,10 @@ header {
   -----------------------spinner animation------------------------
   ----------------------------------------------------------------*/
 @keyframes body {
-  0% {
+  from {
     transform: translate(0);
     opacity: 0; }
-  100% {
+  to {
     transform: translate(1);
     opacity: 1; } }
 
