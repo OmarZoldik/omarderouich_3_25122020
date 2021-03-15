@@ -250,16 +250,16 @@ body {
 /*--------------------------------------------------------------
   -----------------------------restaurant--------------------------
   ----------------------------------------------------------------*/
-.restaurants {
+#restaurants {
   width: 100%;
   height: 100%;
   background-color: #f2f2f2;
   padding: 20px;
   margin-bottom: -20px; }
-  .restaurants h2 {
+  #restaurants h2 {
     font-size: 1.7em;
     font-weight: bold; }
-  .restaurants .restaurants-box-cards {
+  #restaurants .restaurants-box-cards {
     margin-bottom: 30px;
     background-color: white;
     border-radius: 20px;
@@ -267,21 +267,21 @@ body {
     height: 260px;
     position: relative;
     box-shadow: 1px 1px 10px 5px rgba(187, 187, 187, 0.589); }
-    .restaurants .restaurants-box-cards p {
+    #restaurants .restaurants-box-cards p {
       font-size: 1em; }
-    .restaurants .restaurants-box-cards h3 {
+    #restaurants .restaurants-box-cards h3 {
       font-size: 1.1em;
       font-weight: bold; }
-    .restaurants .restaurants-box-cards img {
+    #restaurants .restaurants-box-cards img {
       height: 180px;
       width: 100%;
       border-top-left-radius: 25px;
       border-top-right-radius: 25px;
       object-fit: cover; }
-    .restaurants .restaurants-box-cards .box-card-txt {
+    #restaurants .restaurants-box-cards .box-card-txt {
       line-height: 10px;
       margin: 10px; }
-    .restaurants .restaurants-box-cards .card-green-square {
+    #restaurants .restaurants-box-cards .card-green-square {
       background-color: #99e2d0;
       top: 30px;
       right: -25px;
@@ -292,7 +292,7 @@ body {
       width: 80px;
       padding: 7px 10px 7px 10px;
       transform: translate(-50%, -50%); }
-    .restaurants .restaurants-box-cards .box-card-logo {
+    #restaurants .restaurants-box-cards .box-card-logo {
       position: absolute;
       bottom: 20px;
       right: 20px;
@@ -306,13 +306,13 @@ body {
       display: flex;
       justify-content: center;
       align-items: center; }
-      .restaurants .restaurants-box-cards .box-card-logo:hover {
+      #restaurants .restaurants-box-cards .box-card-logo:hover {
         background: -webkit-linear-gradient(to top, #e72c83 0%, #a742c6) no-repeat;
         background: linear-gradient(to top, #e72c83 0%, #a742c6) no-repeat;
         background-size: auto 100%;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; }
-        .restaurants .restaurants-box-cards .box-card-logo:hover .fa-heart {
+        #restaurants .restaurants-box-cards .box-card-logo:hover .fa-heart {
           font-weight: bold; }
 
 /*--------------------------------------------------------------
@@ -329,7 +329,7 @@ body {
   .restaurants-box {
     display: flex;
     justify-content: space-between; }
-  .restaurants .restaurants-box-cards {
+  #restaurants .restaurants-box-cards {
     width: 23%; } }
 
 .heart-icon {
@@ -468,10 +468,10 @@ header {
   ----------------------------------------------------------------*/
 @keyframes body {
   from {
-    transform: translate(0);
+    transform: translate(1);
     opacity: 0; }
   to {
-    transform: translate(1);
+    transform: translate(0);
     opacity: 1; } }
 
 @keyframes spinner {

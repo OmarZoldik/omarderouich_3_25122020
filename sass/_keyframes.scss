@@ -51,11 +51,11 @@
 
 @keyframes body {
   from {
-    transform: translate(0);
+    transform: translate(1);
     opacity: 0;
   }
   to {
-    transform: translate(1);
+    transform: translate(0);
     opacity: 1;
   }
 }
