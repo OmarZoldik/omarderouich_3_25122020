@@ -23,25 +23,3 @@
   animation-delay: 0.5s;
   animation-duration: 0.5s;
 }
-
-@keyframes body {
-  0% {
-    transform: translate(0);
-    opacity: 0;
-  }
-  100% {
-    transform: translate(1);
-    opacity: 1;
-  }
-}
-
-@keyframes spinner {
-  0% {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity: 0;
-  }
-}

@@ -354,22 +354,6 @@ body {
   animation-delay: 0.5s;
   animation-duration: 0.5s; }
 
-@keyframes body {
-  0% {
-    transform: translate(0);
-    opacity: 0; }
-  100% {
-    transform: translate(1);
-    opacity: 1; } }
-
-@keyframes spinner {
-  0% {
-    transform: rotate(0deg);
-    opacity: 1; }
-  100% {
-    transform: rotate(360deg);
-    opacity: 0; } }
-
 footer {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.774);
@@ -429,6 +413,9 @@ header {
     margin-bottom: 15px;
     object-fit: cover; }
 
+/*---------------------------------------------------------
+  -------------------green-square animation-----------------
+  ----------------------------------------------------------*/
 @keyframes rotate-center {
   0% {
     transform: rotate(0); }
@@ -447,6 +434,9 @@ header {
   100% {
     width: calc(100% - 110px); } }
 
+/*----------------------------------------------------------------
+  -------------------------box animation--------------------------
+  ----------------------------------------------------------------*/
 @keyframes scale-top-full {
   0% {
     transform: scaleY(0); }
@@ -460,3 +450,22 @@ header {
   100% {
     transform: translateY(0);
     opacity: 1; } }
+
+/*----------------------------------------------------------------
+  -----------------------spinner animation------------------------
+  ----------------------------------------------------------------*/
+@keyframes body {
+  0% {
+    transform: translate(0);
+    opacity: 0; }
+  100% {
+    transform: translate(1);
+    opacity: 1; } }
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1; }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0; } }
