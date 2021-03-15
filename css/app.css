@@ -173,7 +173,7 @@ body {
   width: 100%; }
   .localisation .search-bar {
     border: 0.5px #e2e2e2 solid;
-    background-color: #e2e2e2; }
+    background-color: #e2e2e2f3; }
   .localisation .fa-map-marker-alt {
     margin: 10px; }
 
@@ -340,8 +340,10 @@ body {
   font-size: 25px; }
   .heart-icon:hover {
     background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6) no-repeat;
+    background: linear-gradient(top, #e72c83 0%, #a742c6) no-repeat;
     background-size: auto 100%;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent; }
     .heart-icon:hover .fa-heart {
       font-weight: bold; }
