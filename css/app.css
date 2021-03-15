@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center; }
 
-.menu-box-element .menu-box-element-price, .commander-btn, .localisation {
+.menu-box-element .menu-box-element-price, .commander-btn, .commander-btn a, .localisation, .presentation .restaurant-btn {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -131,9 +131,16 @@ body {
   top: 80px; }
   .commander-btn a {
     border-radius: 30px;
-    padding: 15px 40px 15px 40px;
-    background: linear-gradient(to top, #9356dc, #ff79da);
-    color: #ffffff; }
+    width: 160px;
+    height: 50px;
+    background-color: #ff79da;
+    background-image: linear-gradient(transparent, #9356dc);
+    color: #ffffff;
+    box-shadow: 1px 1px 10px 5px rgba(187, 187, 187, 0.589);
+    transition: background-color 0.9s ease-in-out; }
+    .commander-btn a:hover {
+      background-color: #c24da1;
+      color: #ffffff; }
 
 /*---------------------------------------------------
 --------------Responsive deckstop-------------------
@@ -183,13 +190,17 @@ body {
     color: grey; }
   .presentation .restaurant-btn {
     border-radius: 30px;
-    padding: 15px 20px 15px 20px;
-    background: linear-gradient(to top, #9356dc, #ff79da);
+    background-color: #ff79da;
+    background-image: linear-gradient(transparent, #9356dc);
     color: #ffffff;
     height: 50px;
     width: 215px;
     margin: 30px 100px 30px 100px;
-    box-shadow: 1px 1px 10px 5px rgba(187, 187, 187, 0.589); }
+    box-shadow: 1px 1px 10px 5px rgba(187, 187, 187, 0.589);
+    transition: background-color 0.9s ease-in-out; }
+    .presentation .restaurant-btn:hover {
+      background-color: #c24da1;
+      color: #ffffff; }
   .presentation a {
     color: #ffffff; }
 
@@ -288,8 +299,13 @@ body {
       color: black;
       cursor: pointer;
       background-size: auto 0%;
-      transition: all 400ms linear 0s;
-      font-size: 20px; }
+      transition: all 500ms linear 0s;
+      font-size: 20px;
+      height: 40px;
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
       .restaurants .restaurants-box-cards .box-card-logo:hover {
         background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6) no-repeat;
         background-size: auto 100%;

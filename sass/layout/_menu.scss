@@ -155,9 +155,18 @@ body {
 
   a {
     border-radius: 30px;
-    padding: 15px 40px 15px 40px;
-    background: $degrade;
+    @extend %flex-center;
+    width: 160px;
+    height: 50px;
+    background-color: $rose;
+    background-image: linear-gradient(transparent, $purple);
     color: $white;
+    box-shadow: $shadow;
+    transition: background-color 0.9s ease-in-out;
+    &:hover {
+      background-color: $darkrose;
+      color: $white;
+    }
   }
 }
 

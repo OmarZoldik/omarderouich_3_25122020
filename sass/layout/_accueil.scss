@@ -53,13 +53,19 @@ body {
 
   .restaurant-btn {
     border-radius: 30px;
-    padding: 15px 20px 15px 20px;
-    background: $degrade;
+    @extend %flex-center;
+    background-color: $rose;
+    background-image: linear-gradient(transparent, $purple);
     color: $white;
     height: 50px;
     width: 215px;
     margin: 30px 100px 30px 100px;
     box-shadow: $shadow;
+    transition: background-color 0.9s ease-in-out;
+    &:hover {
+      background-color: $darkrose;
+      color: $white;
+    }
   }
 
   a {
@@ -185,8 +191,13 @@ body {
       color: black;
       cursor: pointer;
       background-size: auto 0%;
-      transition: all 400ms linear 0s;
+      transition: all 500ms linear 0s;
       font-size: 20px;
+      height: 40px;
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       &:hover {
         background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6) no-repeat;
